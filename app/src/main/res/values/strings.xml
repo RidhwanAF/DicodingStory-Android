@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Story App Submission</string>
+    <string name="title_welcome_page">Welcome to Story App</string>
+    <string name="message_welcome_page">List of stories who are learning at Dicoding.</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+    <string name="copyright">©Ridhwan Anwar Fauzan</string>
+    <string name="title_login_page">Ready to see people\'s stories?</string>
+    <string name="message_login_page">Login here</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="imgLoginDesc">This is image from login page</string>
+    <string name="imgSignupDesc">This is image from Signup page</string>
+    <string name="imgWelcomeDesc">This is image from Welcome page</string>
+    <string name="title_signup_page">Fill this form</string>
+    <string name="name">Name</string>
+    <string name="image_splashscreen">This is loading screen</string>
+    <string name="logout">Logout</string>
+    <string name="user_image">This is user profile</string>
+    <string name="description">Description</string>
+    <string name="this_is_image_of_stories">This is image of Stories</string>
+    <string name="id">Id</string>
+    <string name="created_at">4/20/2022</string>
+    <string name="tv_id">id :</string>
+    <string name="tv_created">Created At :</string>
+    <string name="tv_description">Description :</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload">Upload</string>
+    <string name="this_is_imageview">This is ImageView</string>
+    <string name="add_story">Add Story Button</string>
+    <string name="input_email">Input your email</string>
+    <string name="input_password">Input your password</string>
+    <string name="invalid_email_password">Wrong email or Password!</string>
+    <string name="title_name">Dicoding Story App</string>
+    <string name="name_required">Name Required</string>
+    <string name="email_required">Email Required</string>
+    <string name="password_required">Password cannot be less than 6 characters</string>
+    <string name="setting">Setting</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="language">Language</string>
+    <string name="add_new_story">Add New Story</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="map" translatable="false">Map Stories</string>
+    <string name="normal_type" translatable="false">Normal</string>
+    <string name="satellite_type" translatable="false">Satellite</string>
+    <string name="terrain_type" translatable="false">Terrain</string>
+    <string name="hybrid_type" translatable="false">Hybrid</string>
+    <string name="map_story">Map Stories</string>
+    <string name="empty_field">This must not be empty</string>
+    <string name="lat" translatable="false">Lat :</string>
+    <string name="count_lat" translatable="false">-</string>
+    <string name="lon" translatable="false">Lon :</string>
+    <string name="count_lon" translatable="false">-</string>
+    <string name="cannot_find_location">Cannot find the location</string>
+    <string name="location_disabled">Location is disabled</string>
+    <string name="granted_permission">Permission Granted</string>
+    <string name="denied_permission">Permission Denied</string>
+    <string name="open_maps">Opening Maps…</string>
+    <string name="retry">Retry</string>
+</resources>

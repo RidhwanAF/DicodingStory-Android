@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.DetailActivity">
+
+    <ImageView
+        android:id="@+id/image_story"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:contentDescription="@string/this_is_image_of_stories"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_id"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideLine"
+        app:layout_constraintTop_toBottomOf="@+id/image_story" />
+
+    <TextView
+        android:id="@+id/id_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/tv_id"
+        app:layout_constraintTop_toBottomOf="@+id/image_story" />
+
+    <TextView
+        android:id="@+id/tv_created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_created"
+        app:layout_constraintStart_toStartOf="@id/guideLine"
+        app:layout_constraintTop_toBottomOf="@+id/id_story"/>
+
+    <TextView
+        android:id="@+id/created_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/created_at"
+        app:layout_constraintStart_toEndOf="@id/tv_created"
+        app:layout_constraintTop_toBottomOf="@id/id_story" />
+
+    <TextView
+        android:id="@+id/title_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lat"
+        app:layout_constraintStart_toStartOf="@id/guideLine"
+        app:layout_constraintTop_toBottomOf="@id/tv_created" />
+
+    <TextView
+        android:id="@+id/tv_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/count_lat"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/title_lat"
+        app:layout_constraintTop_toTopOf="@id/title_lat"
+        app:layout_constraintBottom_toBottomOf="@id/title_lat"/>
+
+    <TextView
+        android:id="@+id/title_lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lon"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/tv_lat"
+        app:layout_constraintTop_toBottomOf="@id/tv_created" />
+
+    <TextView
+        android:id="@+id/tv_lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/count_lon"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/title_lon"
+        app:layout_constraintTop_toTopOf="@id/title_lon"
+        app:layout_constraintBottom_toBottomOf="@id/title_lon"/>
+
+    <TextView
+        android:id="@+id/name_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:text="@string/name"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/guideLine"
+        app:layout_constraintTop_toBottomOf="@id/tv_lat" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/tv_description"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/guideLine"
+        app:layout_constraintTop_toBottomOf="@id/name_story" />
+
+    <TextView
+        android:id="@+id/desc_story"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:text="@string/description"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideLine"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
